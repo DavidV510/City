@@ -1,0 +1,205 @@
+/* 
+    Theme Name:City 
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for City
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+}
+body{
+   position: relative;
+}
+
+:root{
+    --backColor:rgb(146, 18, 18);
+    --yellow: rgb(255, 208, 52);
+    --white:white;
+
+    --mainFont:'Raleway', sans-serif;
+    --semiFOnt:'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    font-family: var(--mainFont);
+    font-weight: bold;
+}
+
+h2{
+    font-size: 4.5rem;
+    font-family: var(--mainFont);
+    font-weight: bold;
+}
+
+h3{
+    font-size: 6rem;
+    font-family: var(--mainFont);
+    font-weight: bold;
+}
+
+p{
+    font-size: 3rem;
+    font-family: var(--semiFOnt);
+    font-weight: 400;
+}
+
+
+
+ul{
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+li{
+    font-family: var(--mainFont);
+}
+
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container .single{
+    position: relative;
+    width: 70%;
+}
+.container .single .single-title{
+    background-color: var(--backColor);
+    text-align: left;
+    color: white;
+    border-radius: 6px;
+    padding: 1rem 3rem;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 40rem;
+    left: 0rem;
+}
+
+.container .single .single-content p{
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: left;
+    line-height:3rem ;
+}
+
+.container .single .single-img{
+    width: 100%;
+    height: 50rem;
+    margin-bottom: 2rem;
+}
+
+.container .single .single-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .single .single-info span{
+    font-size: 1.8rem;
+    font-family: var(--mainFont);
+}
+.container .single .single-info span a{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: var(--backColor);
+}
+
+.container .single .comment-respond h3{
+    font-size: 2.5rem;
+    color: var(--backColor);
+}
+.container .single .comment-respond a{
+    text-decoration: none;
+    color: var(--backColor);
+}
+
+.container .single .comment-respond .comment-form-comment label{
+    display: none;
+}
+
+.container .single .post-edit-link{
+    color: var(--backColor);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: var(--mainFont);
+}
+
+.current-menu-item{
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+}
+
+.container h2{
+    text-align: center;
+    color: var(--backColor);
+}
+
+
+/* Contact */
+
+.contactForm{
+    background-color: rgba(163, 157, 157, 0.527);
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    margin-top: 3rem;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.3);
+}
+.wpcf7{
+    text-align: center;
+    font-family: var(--mainFont);
+}
+
+.wpcf7-form-control-wrap{
+   
+}
+
+.wpcf7 input{
+    margin-top: 1rem;
+    border: 2px var(--backColor) solid;
+    cursor: pointer;
+}
+
+.wpcf7 textarea{
+    margin-top: 1rem;
+    border: 2px var(--backColor) solid;
+    cursor: pointer;
+}
+
+.wpcf7 .wpcf7-submit{
+    background-color: var(--backColor);
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.wpcf7 .wpcf7-submit:hover{
+    color: black;
+}
+
+@media (max-width:768px){
+    .container .single{
+        width: 100%;
+    }
+
+    .container .single .single-img{
+        margin-bottom: 5rem;
+    }
+
+    textarea{
+        width: 33rem;
+    }
+}

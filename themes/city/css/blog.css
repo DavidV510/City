@@ -1,0 +1,56 @@
+/* 
+    Theme Name:City 
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for City
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+/* Blog */
+
+.blogCont{
+
+}
+
+.blogCont a{
+    text-decoration: none;
+    color: black;
+}
+.blogCont .blog {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap:25px;
+    margin-top: 3rem;
+}
+.blogCont .blog .blogImg{
+    width: 100%;
+    height: 25rem;
+    padding: 0;
+    margin-top: 4rem;
+}
+
+.blogCont .blog .blog-content{
+    width: 100%;
+}
+
+.blogCont .blog .blog-content h2{
+    text-align: center;
+    color: var(--backColor);
+}
+.blogCont .blog .blog-content p{
+    line-height: 3rem;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    font-weight: 300;
+}
+
+@media (max-width:768px){
+    .blogCont .blog{
+        display: block;
+    }
+}

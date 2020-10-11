@@ -1,0 +1,113 @@
+/* 
+    Theme Name:City 
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for City
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+/* Sidebar */
+
+.secondary{
+    padding: 2rem;
+}
+.widget{
+
+}
+
+.widget .widget-title{
+    font-family: var(--mainFont);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--backColor);
+}
+
+.widget .textwidget{
+    width: 70%;
+}
+
+.widget .textwidget p{
+    font-family: var(--mainFont);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.widget .textwidget span{
+    float: right;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+/* ABOUT */
+
+
+
+.aboutCont{
+    display: flex;
+   
+}
+
+.aboutCont .about{
+    width: 70%;
+    text-align: center;
+}
+
+.aboutCont .about p{
+    text-align: left;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 5rem;
+}
+
+.aboutCont .side{
+    width: 30%;
+}
+
+.aboutImg{
+   
+    padding: 2rem 10rem;
+    height: 50rem;
+}
+
+.aboutImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media(max-width:768px){
+    .aboutCont{
+        display: block;
+    }
+    .aboutCont .about{
+        width: 100%;
+    }
+    
+    .aboutCont .about p{
+        text-align: left;
+        font-weight: 300;
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+        line-height: 3rem;    
+    }
+
+    .aboutImg {
+        padding: 2rem 0rem;
+        height: 50rem;
+    }
+    
+
+    .side{
+        display: none;
+    }
+}
